@@ -24,7 +24,7 @@ body {
   width: 100%;
   min-height: 100vh;
   position: relative;
-  padding-top: 90px;
+  padding-top: 50px;
 }
 
 nav {
@@ -340,6 +340,7 @@ nav ul li a:not(.pink-btn):hover::after {
   border-radius: 6px;
   color: white;
   font-size: 13px;
+  
 }
 
 input::placeholder,
@@ -371,6 +372,8 @@ textarea::placeholder {
 
 
 @media (max-width: 965px) {
+
+  
   nav ul {
     position: absolute;
     top: 0;
@@ -431,7 +434,7 @@ justify-content: center;
   }
   
 }
-#projects {
+#projects, #about {
   min-height: 100vh;
   background: url("BACKGROUND.jpg") no-repeat center center/cover;
   align-items: center;
@@ -445,13 +448,15 @@ justify-content: center;
   align-items: center;
   justify-content: center;
   
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
 }
 #contact .row {
   display: flex;
   flex-wrap: wrap;
   gap: 40px;
   align-items: flex-start; 
+  /* padding-top: 40px; */
+
 }
 .contact-right {
   display: flex;
@@ -476,6 +481,14 @@ justify-content: center;
     opacity: 0.5;
   }
 }
+
+form .pink-btn{
+    padding: 12px 50px;
+    margin-top: 15px;
+}
+
+
+
 
 
 
